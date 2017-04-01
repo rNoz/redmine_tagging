@@ -1,6 +1,5 @@
-<h3><%= l(:field_tags) %></h3>
-
-<div id='tagcloud'>
+<div class="cloud_content">
+  <h3><%= l(:field_tags) %></h3>
   <%
     tag_cloud_in_project(@project) do |tag, factor|
       options = {:style => "font-size: #{10 * factor + 9}pt" }

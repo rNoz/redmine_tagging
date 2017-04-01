@@ -111,6 +111,11 @@ module TaggingPlugin
 
       alias_method :controller_issues_new_before_save, :controller_issues_edit_before_save
 
+      # from TaggingHelper (app/helpers) copied here:
+      def tag_without_sharp(tag)
+        tag.to_s.gsub /^\s*#/, ''
+      end
+
       # wikis have no view hooks
       def view_layouts_base_content(context={})
         return '' if wiki_pages_inline_tags?
