@@ -1,8 +1,10 @@
-<tr>
-  <th><%= l(:field_tags) %>:</th>
-  <td>
+<hr/>
+
+<div class="cloud_content">
+  <p>
+    <strong><%= l(:field_tags) %></strong>
+  </p>
   <% tags.each do |tag| %>
     <%= link_to_project_tag_filter(@project, tag) %>
   <% end %>
-  </td>
-</tr>
+</div>

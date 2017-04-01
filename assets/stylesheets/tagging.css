@@ -37,3 +37,27 @@
 .filter select[name="v[tags][]"][multiple] {
   min-height: 200px;
 }
+
+
+/* rNoz begin */
+#cloud_trigger {
+  font-size: 0.8rem;
+}
+#cloud_content a {
+  padding: 2px 3px 1px 3px;
+  border-radius: 3px;
+}
+#cloud_content .selected {
+  background: #c9ddff;
+  color: #242424;
+}
+.cloud_content a {
+  padding: 2px 3px 1px 3px;
+  border-radius: 3px;
+  background: #c9ddff;
+  color: #242424;
+}
+.cloud_content .label {
+  font-weight: bold;
+}
+/* rNoz end */
